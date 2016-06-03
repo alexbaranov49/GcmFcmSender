@@ -5,7 +5,6 @@ import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.Charset;
-import java.nio.file.FileSystems;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -22,7 +21,6 @@ import org.json.JSONObject;
 
 
 public class FcmGcmSender {
-//	public static final String API_KEY = "AIzaSyAmN4KGNTV3a3bG1vPwLoXskEi5CeoSrFs";
 	public static final String API_KEY_FILEPATH = "api_key.txt";
 	public static final String SERVER_GCM = "https://android.googleapis.com/gcm/send";
 	public static final String SERVER_FCM = "https://fcm.googleapis.com/fcm/send";
@@ -39,8 +37,6 @@ public class FcmGcmSender {
 	private static final String OPT_FILE_LONG = "file";
 	
 	public static void main(String[] args) {
-		System.out.println("Working Directory = " +
-	              System.getProperty("user.dir"));
 		Options options = createOptions();
 		CommandLine parsedArgs = parseArgs(args, options);		
 		if (! optionsValid(parsedArgs) || parsedArgs.hasOption(OPT_HELP_SHORT)) {
@@ -216,7 +212,7 @@ public class FcmGcmSender {
                 "specified, the message will only be sent to that device. Otherwise, the message \n" +
                 "will be sent to all devices subscribed to the \"global\" topic.");
         System.out.println("");
-        System.out.println("Example (Broadcast): -d \"<Data Message>\" -n \"<Notification Body>");
+        System.out.println("Example (Broadcast): -d \"<Data Message>\" -n \"<Notification Body>\"");
         System.out.println("");
         System.exit(1);
 	}
