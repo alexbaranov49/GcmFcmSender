@@ -22,4 +22,6 @@ File msg.txt is an example of JSON message file. See more at https://firebase.go
 	specified, the message will only be sent to that device. Otherwise, the message 
 	will be sent to all devices subscribed to the "global" topic.
 	
-	Example (Broadcast): -d "<Data Message>" -n "<Notification Body>"
+	Example (Broadcast): 
+	java -jar sender.jar -d "<Data Message>" -n "<Notification Body>"
+	java -jar sender.jar --fcm --file "<Path>"

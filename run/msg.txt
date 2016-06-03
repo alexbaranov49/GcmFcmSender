@@ -1,0 +1,9 @@
+ {
+    "to" : "/topics/global",
+    "notification" : {
+      "body" : "great match!",
+      "title" : "Portugal vs. Denmark",
+      "icon" : "icon"
+    },
+    "data": {"message": "WIN!"}
+ }
