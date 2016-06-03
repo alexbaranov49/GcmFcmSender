@@ -8,18 +8,18 @@ File msg.txt is an example of JSON message file. See more at https://firebase.go
 
 # Usage:
 
-usage:
- -d <arg>           Data payload ("message" parameter)
- -f,--file <arg>    Path to message payload file in JSON format (ignores
-                    -d, -n and --token options)
-    --fcm           Work with FCM
-    --gcm           Work with GCM (default)
- -h,--help          Show help
- -n <arg>           Notification body
- -t,--token <arg>   Device token of recipient
-
-Specify a test message to broadcast via GCM or FCM. If a device's registration token is
-specified, the message will only be sent to that device. Otherwise, the message 
-will be sent to all devices subscribed to the "global" topic.
-
-Example (Broadcast): -d "<Data Message>" -n "<Notification Body>"
+	usage:
+	 -d <arg>           Data payload ("message" parameter)
+	 -f,--file <arg>    Path to message payload file in JSON format (ignores
+	                    -d, -n and --token options)
+	    --fcm           Work with FCM
+	    --gcm           Work with GCM (default)
+	 -h,--help          Show help
+	 -n <arg>           Notification body
+	 -t,--token <arg>   Device token of recipient
+	
+	Specify a test message to broadcast via GCM or FCM. If a device's registration token is
+	specified, the message will only be sent to that device. Otherwise, the message 
+	will be sent to all devices subscribed to the "global" topic.
+	
+	Example (Broadcast): -d "<Data Message>" -n "<Notification Body>"
