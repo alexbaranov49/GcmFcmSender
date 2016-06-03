@@ -1,5 +1,7 @@
 # GcmFcmSender
-Simple java CLI tool to send GCM/FCM push messages from local machine
+Simple java CLI tool to send GCM/FCM push messages from local machine. Based on "GCMSender" project from google sample project: 
+	https://developers.google.com/cloud-messaging/android/start
+	git clone https://github.com/googlesamples/google-services.git
 
 File "api_key.txt" must be in project's root directory (or the same directory where executable .jar is). It must contain Server API key for sending push notifications (must be on 1st line exactly).
 
